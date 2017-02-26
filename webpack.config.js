@@ -25,13 +25,14 @@ module.exports = {
 		loaders
 	},
 	devServer: {
-		contentBase: "./public",
-			noInfo: true, //  --no-info option
-			hot: true,
-			inline: true,
-			port: PORT,
-			host: HOST
-		},
+	    contentBase: "./public",
+	    noInfo: true, //  --no-info option
+	    hot: true,
+	    inline: true,
+	    port: PORT,
+	    host: HOST,
+	    historyApiFallback:true
+	},
 	plugins: [
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
